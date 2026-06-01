@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Tűzhegy Varázslója - Teljes Első Fejezet & Harcrendszer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="adventure-container">
+    <h1>A Tűzhegy Varázslója</h1>
+    <div class="subtitle">Interaktív RPG kiadás - Kockadobás & Harcrendszer</div>
+    
+    <div class="status-bar">
+        <div>⚔️ Ügyesség: <span id="stat-skill">10</span></div>
+        <div>❤️ Életerő: <span id="stat-stamina">20</span></div>
+        <div>💰 Arany: <span id="stat-gold">0</span> db</div>
+    </div>
+    <div class="inventory-bar">
+        🎒 Felszerelés: <span id="stat-items">Kard, Bőrpajzs, Élelem (6 adag)</span>
+    </div>
+
+    <div class="divider"></div>
+    
+    <div id="combat-field" class="combat-zone">
+        <h3 style="color: #c0392b; margin-top: 0;">⚔️ CSATA FOLYIK! ⚔️</h3>
+        <div class="combat-stats">
+            <div><strong>Te</strong><br>Támadóerő: <span id="player-attack">-</span></div>
+            <div style="font-size: 2rem;">VS</div>
+            <div><strong id="enemy-name">Szörny</strong><br>Életerő: <span id="enemy-stamina">-</span></div>
+        </div>
+        <div id="combat-log" class="log-text">Kattints a dobáshoz!</div>
+        <button id="combat-roll-btn" class="choice-btn combat-btn" style="text-align:center; margin-top:15px; width:100%;">Kockadobás és Támadás!</button>
+    </div>
+
+    <div id="game-content">
+        </div>
+</div>
+
+<script src="./index.js">
+</script>
+
+</body>
+</html>
